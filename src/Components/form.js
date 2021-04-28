@@ -10,7 +10,5 @@ import getWeather from '../helpers/data/weatherData';
 
 export default function WeatherForm() {
   const [userLocation, setUserLocation] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    g
+  const handleInputChange = (e) => {
+    setUserLocation((prevSt
