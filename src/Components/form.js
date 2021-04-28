@@ -1,7 +1,7 @@
 import React from 'React';
 
-export default const weatherForm = () => {
+export default function weatherForm() {
   return (
-  )
-
+    
+  );
 }
