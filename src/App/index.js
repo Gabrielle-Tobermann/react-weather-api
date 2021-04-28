@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
+import WeatherCard from '../Components/WeatherCard';
+import getWeather from '../helpers/data/weatherData';
 import './App.scss';
 
 function App() {
-  const [domWriting, setDomWriting] = useState('Nothing Here!');
-
-  const handleClick = (e) => {
-    console.warn(`You clicked ${e.target.id}`);
-    setDomWriting(`You clicked ${e.target.id}! Check the Console!`);
-  };
+  const [weather, setWeather]= useState({});
+  
+  useEffect(() => {
+    getWeather().then((weatherObj) => console.warn(weatherObj));
+  }, []);
 
   return (
     <div className='App'>
-     
+      <WeatherCard
+      weather={weather}
+      setWeather={setWeather}
+    />
     </div>
   );
 }
