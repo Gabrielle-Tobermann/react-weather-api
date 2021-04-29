@@ -1,6 +1,24 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import 'variables';
+@import '_variables';
 
 body {
-  background-color: $favColor;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 35px;
+}
+
+.CardTitle {
+ font-size: 35px;
+}
+
+.CardText {
+  font-size: 22px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
 }
