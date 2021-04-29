@@ -32,7 +32,6 @@ function App() {
       if (resp) {
         setForecast(resp.weather[0].description);
         setIcon(resp.weather[0].icon);
-        console.warn('forecast', forecast);
       }
     });
   };
@@ -49,8 +48,8 @@ function App() {
       <hr/>
       {submitted ? <Card body>
           <CardTitle tag="h5">{userLocation.location}</CardTitle>
-          <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`}/>
           <CardText>{forecast}</CardText>
+          <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`}/>
         </Card> : ''}
     </div>
   );
