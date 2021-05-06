@@ -14,5 +14,8 @@ This weatherb app allows the user to fill the form with their location and get t
 ## Screenshot 
 ![weather-api](https://user-images.githubusercontent.com/76187279/117234579-e15f3e00-adea-11eb-94dc-8b76d6ac1cf0.png)
 
+## Loom 
+https://www.loom.com/share/0b8989c3615b4404aea8726715e71afb
+
 ## Contributor
 https://github.com/Gabrielle-Tobermann
